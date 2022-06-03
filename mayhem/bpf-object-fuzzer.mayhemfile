@@ -1,0 +1,4 @@
+project: PROJECT
+target: bpf-object-fuzzer
+cmds:
+- cmd: /out/bpf-object-fuzzer
