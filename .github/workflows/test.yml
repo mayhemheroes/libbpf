@@ -1,11 +1,7 @@
 name: libbpf-ci
 
-on: 
-  pull_request:
-  push:
-  schedule:
-    - cron:  '0 18 * * *'
-
+on:
+  workflow_dispatch:
 concurrency: 
   group: ci-test-${{ github.head_ref }}
   cancel-in-progress: true

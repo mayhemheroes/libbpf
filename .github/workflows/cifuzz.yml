@@ -2,12 +2,7 @@
 # https://google.github.io/oss-fuzz/getting-started/continuous-integration/
 name: CIFuzz
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+  workflow_dispatch:
 jobs:
   Fuzzing:
     runs-on: ubuntu-latest
