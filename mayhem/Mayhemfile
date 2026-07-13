@@ -1,0 +1,10 @@
+project: libbpf
+target: bpf-object-fuzzer
+
+cmds:
+  - cmd: /mayhem/bpf-object-fuzzer
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/bpf-object-fuzzer/testsuite
